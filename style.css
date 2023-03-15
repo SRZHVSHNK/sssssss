@@ -1,0 +1,166 @@
+body {
+    display: grid;
+	margin: 0;
+	padding: 0;
+}
+
+header, main, footer {
+	display: grid;
+	grid-template-columns: 1fr;
+    width: 100%;
+}
+
+header {
+	background-color: rgb(66, 71, 84);
+	color: #fff;
+	text-align: left;
+    min-height: 50px;
+    max-height: 50px;
+	position: relative;
+	z-index: 1;
+
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    height: 692px;
+}
+
+.c1 {
+	background-color: #f2f2f2;
+	/* padding: 20px; */
+	
+}
+
+.c2 {
+	background-color: #624848;
+	/* padding: 20px; */
+	text-align: center;
+}
+
+.c3 {
+	background-color: #76e746;
+	/* padding: 20px; */
+	text-align: center;
+}
+
+.c4 {
+	background-color: #8e4b4b;
+	/* padding: 20px; */
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(7, 122, 153);
+	color: #fff;
+	text-align: center;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#hamnav {
+	width: 100%;
+	background: rgb(66, 71, 84);
+	padding: 0;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+  }
+  #hamitems a:hover { background: #828282; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+  @media screen and (max-width: 1700px){
+	/* (A) BREAK INTO VERTICAL MENU */
+	#hamitems a {
+	  box-sizing: border-box;
+	  display: block;
+	  width: 100%;
+	  border-top: 1px solid #000000;
+	}
+   
+	/* (B) SHOW HAMBURGER ICON */
+	#hamnav label { 
+	  display: inline-block; 
+	  color: white;
+	  background: rgb(66, 71, 84);
+	  font-style: normal;
+	  font-size: 1.3em;
+	  padding: 10px;
+	}
+  
+	/* (C) TOGGLE SHOW/HIDE MENU */
+	#hamitems { display: none; }
+	#hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  #hamnav {
+	position: sticky;
+	top: 0;
+  }
+
+
+  .main {
+	position: sticky;
+  }
+
+  
+  .c1{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	max-width: 100%;
+	/* box-sizing: content-box; */
+	height: 692px;
+
+  }
+  .slide1 {
+	
+	color: rgb(238, 213, 174);
+	font-size: 15px;
+	line-height: 692px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: right;
+	width: 100%;
+	
+
+	
+  }
+  
+  .slide2 {
+	
+	color: rgb(238, 213, 174);
+	font-size: 20px;
+	line-height: 692px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: right;
+	width: 100%;
+
+	
+  }
+
+  .slide1 {
+	background-image: url(slide1.jpg); 
+	background-size: 100% 100%;
+  }
+
+  .slide2 {
+	background-image: url(slide2.jpg);
+	background-size: 100% 100%;
+  }
+  
+ 
